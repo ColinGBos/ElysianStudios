@@ -33,18 +33,23 @@ main {
     text-align: center;
     display: inline-block;
 }
+#heroContent {
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
 #hero img{
     height: 120px;
     width: auto;
     float: left;
-    margin: 140px 0 0 9%;
+    margin: 140px 0 0 0;
 }
 
 #hero h1{
     float: left;
     display: inline;
-    margin: 160px 0 0 3%;
-    width: 75%;
+    margin: 115px 0 0 3%;
+    width: 400px;
     text-align: left;
 }
 
@@ -62,13 +67,16 @@ main {
 .threeCol, .fourCol {
     background-color: #f8f8f8;
     float: left;
-    width: 29%;
+    width: 28%;
     margin: 0 2% 2% 0;
-    padding: 1%;
+    padding: 2%;
+}
+.threeCol:last-child, .fourCol:last-child {
+    margin: 0 0 2% 0;
 }
 
 .fourCol {
-    width: 20.5%;
+    width: 19.5%;
 }
 
 .fourCol img{
@@ -102,11 +110,7 @@ main {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
-}
-
-.lastCol {
-    float: right;
-    margin: 0 0 0 0;
+    flex-wrap: -webkit-wrap;
 }
 
 #contacts {
@@ -126,12 +130,13 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 h1 {
-    font-size: 60px;
+    color: #bbb;
+    font-size: 65px;
     font-weight: 100;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     padding: 15px 0 20px 0;
-    line-height: 60px;
+    line-height: 70px;
     text-align: center;
 }
 h2{
@@ -249,12 +254,6 @@ main img, footer img {
         margin: 0 auto;
     }
 
-    #hero h1{
-
-        margin: 125px 0 0 3%;
-        width: 60%;
-    }
-
     .threeCol, .fourCol {
         background-color: #f8f8f8;
         float: left;
@@ -302,7 +301,7 @@ main img, footer img {
     }
     
     #hero {
-        height: 600px;
+        height: 700px;
         width: 100%;
         background-image: url("../images/headerbackground_wide.jpg");
         background-repeat: no-repeat;
@@ -310,17 +309,24 @@ main img, footer img {
         text-align: center;
         display: block;
     }
+    
+    #heroContent {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
     #hero img{
-        height: 120px;
-        width: auto;
-        margin: 200px auto 0 auto;
+        height: auto;
+        width: 35%;
+        margin: 200px 32.5% 0 32.5%;
         display: block;
     }
 
     #hero h1{
+        font-size: 55px;
         float: left;
         display: block;
-        margin: 10px 0 0 3%;
+        margin: 40px 0 0 3%;
         width: 100%;
         text-align: center;
     }
