@@ -27,7 +27,7 @@ main {
 #hero {
     height: 400px;
     width: 100%;
-    background-image: url("images/headerbackground_wide.jpg");
+    background-image: url("../images/headerbackground_wide.jpg");
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
@@ -304,7 +304,7 @@ main img, footer img {
     #hero {
         height: 600px;
         width: 100%;
-        background-image: url("images/headerbackground_wide.jpg");
+        background-image: url("../images/headerbackground_wide.jpg");
         background-repeat: no-repeat;
         background-position: center;
         text-align: center;
