@@ -27,7 +27,7 @@ main {
 #hero {
     height: 400px;
     width: 100%;
-    background-image: url("/images/headerbackground_wide.jpg");
+    background-image: url("images/headerbackground_wide.jpg");
     background-repeat: no-repeat;
     background-position: top;
     text-align: center;
