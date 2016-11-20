@@ -1,5 +1,5 @@
 //jQuery stuff
-$(document).ready(function() {
+$(document).ready(function () {
     //Sets the height of the hero image div to the viewport height
     function setHeight() {
         windowHeight = $(window).innerHeight();
@@ -11,8 +11,14 @@ $(document).ready(function() {
         /*
             If you're on your desktop, and you make the viewport smaller, when you size it larger, the proper height needs to be reset.
         */
-        else {
+        else if (windowHeight > 500 && windowWidth >= 650) {
             $('#hero').css('min-height', 500)
+        }
+        /*
+            This preserves the "full fold" use on mobile devices in horizontal mode
+        */
+        else if (windowHeight < 500 && windowWidth >= 650) {
+            $('#hero').css('min-height', windowHeight)
         }
     };
     
@@ -22,12 +28,16 @@ $(document).ready(function() {
         windowWidth = $(window).outerWidth();
         marginValue = 165;
         
+        if (windowHeight < 500) {
+                marginValue = (windowHeight / 2)-85;
+            }
+        
         // vertical stack of contents on mobile requires some tweaking
         if (windowWidth < 650) {
-            marginValue = (windowHeight/2)-180;
+            marginValue = (windowHeight / 2)-195;
         }
         
-        $('#heroContent').css('margin-top', marginValue)
+        $('#heroContent').css('margin-top', marginValue);
     };
     
     //called on page load
@@ -35,7 +45,7 @@ $(document).ready(function() {
     setMargin();
 
     //called on window resize
-    $(window).resize(function() {
+    $(window).resize(function () {
         setHeight();
         setMargin();
     });
