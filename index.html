@@ -4,9 +4,14 @@
 <meta charset="UTF-8">
     <title>Elysian Studios</title>
     <meta name="description" content="The right choice for business owners to take care of branding and web presence.">
+    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,400|Droid+Sans" rel="stylesheet">
+    
     <script src="js/modernizr-custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -15,8 +20,10 @@
         <header class="mainHead">
         <div class="row clearfix">
             <div id="hero">
-                <div id="heroContent">
-                    <img src="images/Logo_alt.png" alt="Logo for Elysian Studios">
+                <div id="heroContent" class="clearfix">
+                    <a href="javascript:void(0);">
+                        <img src="images/Logo_alt.png" alt="Logo for Elysian Studios">
+                    </a>
                     <h1>Elysian Studios</h1>
                 </div>
             </div>
@@ -43,7 +50,7 @@
                     <p>
                         We build beautiful, modern websites that meet the goals of our clients and the needs of their customers. All of our sites are mobile and tablet friendly.
                     </p>
-                    <a class="roundedButton" href="javascript:void(0);">Start A Project</a>
+                    <a class="roundedButton" href="javascript:void(0);"><h5>Start A Project</h5></a>
                 </section>
                 <section class="threeCol boxShadow">
                     <h3>Branding</h3>
@@ -51,7 +58,7 @@
                     <p>
                         Whether we're starting from scratch or refreshing an existing brand, we love creating cohesive visual identities that help our clients stand out.
                     </p>
-                    <a class="roundedButton" href="javascript:void(0);">Start A Project</a>
+                    <a class="roundedButton" href="javascript:void(0);"><h5>Start A Project</h5></a>
                 </section>
                 <section class="threeCol boxShadow">
                     <h3>Daylogo</h3>
@@ -59,10 +66,12 @@
                     <p>
                         Efficient and cost-effective, the Daylogo is perfect for smaller projects. We work together closely with a client to create a logo and website in 6 hours flat.
                     </p>
-                    <a class="roundedButton" href="javascript:void(0);">Start A Project</a>
+                    <a class="roundedButton" href="javascript:void(0);"><h5>Start A Project</h5></a>
                 </section>
             </article>
 
+            <div class="pageBreak2"></div>
+            
             <article class="fourColContainer flex clearfix">
                 <section class="fourCol boxShadow">
                     <h3>We Write</h3>
@@ -121,6 +130,8 @@
                     </p>
                 </section>
             </article>
+            
+            <div class="pageBreak2"></div>
 
             <article class="fourColContainer flex clearfix">
                 <section class="fourCol boxShadow">
@@ -187,6 +198,8 @@
                     </p>
                 </section>
             </article>
+            
+            <div class="pageBreak2"></div>
 
             <article class="fourColContainer flex clearFix">
                 <section class="fourCol boxShadow">
@@ -223,10 +236,10 @@
         <h2>Contact</h2>
         <div class="twoColContainer clearfix flex">
             <div class="twoCol">
-                <h3>519 555 5555</h3>
+                <h4>519 555 5555</h4>
                 <a href="mailto:hello@elysianstudios.xyz">hello&#64;elysianstudios.xyz</a>
-                <div class="twoColContainer flex clearfix">
-                    <div class="twoCol">
+                <div class="flex clearfix">
+                    <div class="contactInfo">
                         <h4>Office Location</h4>
                         <p>
                             1324 Oxford St.
@@ -234,7 +247,7 @@
                             Canada
                         </p>
                     </div>
-                    <div class="twoCol">
+                    <div class="contactInfo">
                         <h4>Office Hours</h4>
                         <p>
                             Monday-Thursday
@@ -243,13 +256,15 @@
                         </p>
                     </div>
                 </div>
-                <img src="img/googlemap.jpg">
+                <iframe
+                    id="googleMap"
+                    frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC9GMxxvKxB3CKYpjFNC4XXkGzx9bGvr20
+                    &q=place_id:ChIJnx4-sw3tLogRVPokiSnkyq8" allowfullscreen>
+                </iframe>
             </div>
             <div class="twoCol">
                 <h3>Get In Touch</h3>
-                <address>
-                    <a href="mailto:colin.g.bos@gmail.com">hello&#64;elysianstudios.xyz</a>
-                </address>
                 <p>
                     Tell us about your project! We typically respond within two business days to set up a meeting where we can get to know each other and start defining goals, scope, budget, and timeline.
                 </p>
